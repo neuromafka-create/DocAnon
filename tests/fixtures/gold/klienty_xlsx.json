@@ -1,0 +1,17 @@
+{
+  "id": "klienty_xlsx",
+  "description": "test_docs/Клиенты.xlsx — ФИО и компании (NER может резать spans)",
+  "source": "test_docs/Клиенты.xlsx",
+  "source_type": "file",
+  "match_mode": "label_text",
+  "min_recall": 0.50,
+  "min_precision": 0.30,
+  "min_f1": 0.40,
+  "notes": "XLSX flatten через ' | ' ломает NER-границы; recall на полных ФИО может быть частичным",
+  "entities": [
+    {"label": "ORGANIZATION", "text": "ООО «ВекторФуд»"},
+    {"label": "ORGANIZATION", "text": "ООО «ГастроМаркет»"},
+    {"label": "PERSON", "text": "Егорова Марина Викторовна"},
+    {"label": "PERSON", "text": "Новиков Павел Игоревич"}
+  ]
+}

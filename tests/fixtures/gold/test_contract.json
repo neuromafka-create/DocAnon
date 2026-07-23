@@ -1,0 +1,31 @@
+{
+  "id": "test_contract",
+  "description": "Базовый договор с РФ-идентификаторами (tests/fixtures/test_contract.txt)",
+  "source": "tests/fixtures/test_contract.txt",
+  "source_type": "file",
+  "match_mode": "label_text",
+  "min_recall": 0.95,
+  "min_precision": 0.55,
+  "min_f1": 0.70,
+  "entities": [
+    {"label": "ORGANIZATION", "text": "ООО \"Рога и Копыта\""},
+    {"label": "RU_INN", "text": "7707083893"},
+    {"label": "PERSON", "text": "Иванов Иван Иванович"},
+    {"label": "PHONE_NUMBER", "text": "+7 495 123 45 67"},
+    {"label": "EMAIL_ADDRESS", "text": "ivanov@rogaikopyta.ru"},
+    {"label": "PERSON", "text": "Петров Пётр Петрович"},
+    {"label": "RU_INN", "text": "500100732259"},
+    {"label": "RU_SNILS", "text": "123-456-789 64"},
+    {"label": "RU_PASSPORT", "text": "45 12 345678"},
+    {"label": "LOCATION", "text": "Москва"},
+    {"label": "GPS_COORDS", "text": "55.7558, 37.6173"},
+    {"label": "RU_ACCOUNT", "text": "40702810400000000001"},
+    {"label": "RU_BIK", "text": "044525225"},
+    {"label": "CREDIT_CARD", "text": "4111 1111 1111 1111"},
+    {"label": "IP_ADDRESS", "text": "192.168.1.100"},
+    {"label": "MAC_ADDRESS", "text": "00:1A:2B:3C:4D:5E"},
+    {"label": "TG_CHAT_ID", "text": "-1001234567890"},
+    {"label": "RU_DRIVER_LICENSE", "text": "77 АВ 123456"},
+    {"label": "RU_VEHICLE_PLATE", "text": "А123БВ 777"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "dogovor_postavki",
+  "description": "test_docs/Договор_поставки.docx — контакты и организации",
+  "source": "test_docs/Договор_поставки.docx",
+  "source_type": "file",
+  "match_mode": "label_text",
+  "min_recall": 0.85,
+  "min_precision": 0.40,
+  "min_f1": 0.55,
+  "entities": [
+    {"label": "ORGANIZATION", "text": "ООО «Северный Континент»"},
+    {"label": "ORGANIZATION", "text": "ООО «ВекторФуд»"},
+    {"label": "PERSON", "text": "Крылов Андрей Сергеевич"},
+    {"label": "PERSON", "text": "Егорова Марина Викторовна"},
+    {"label": "PHONE_NUMBER", "text": "+7 (916) 412-58-31"},
+    {"label": "EMAIL_ADDRESS", "text": "m.egorova@vectorfood.ru"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "structured_ids",
+  "description": "Синтетический фрагмент: только structured PII (высокий precision/recall)",
+  "source_type": "inline",
+  "text": "ИНН 7707083893 СНИЛС 123-456-789 64 тел. +7 900 111 22 33 email test@example.com карта 4111 1111 1111 1111 IP 10.0.0.1 MAC aa:bb:cc:dd:ee:ff БИК 044525225 р/с 40702810400000000001 паспорт 45 12 345678 госномер А123ВС 777 ВУ 77 АВ 123456 GPS 55.7558, 37.6173 TG -1001234567890",
+  "match_mode": "label_text",
+  "min_recall": 0.90,
+  "min_precision": 0.75,
+  "min_f1": 0.80,
+  "entities": [
+    {"label": "RU_INN", "text": "7707083893"},
+    {"label": "RU_SNILS", "text": "123-456-789 64"},
+    {"label": "PHONE_NUMBER", "text": "+7 900 111 22 33"},
+    {"label": "EMAIL_ADDRESS", "text": "test@example.com"},
+    {"label": "CREDIT_CARD", "text": "4111 1111 1111 1111"},
+    {"label": "IP_ADDRESS", "text": "10.0.0.1"},
+    {"label": "MAC_ADDRESS", "text": "aa:bb:cc:dd:ee:ff"},
+    {"label": "RU_BIK", "text": "044525225"},
+    {"label": "RU_ACCOUNT", "text": "40702810400000000001"},
+    {"label": "RU_PASSPORT", "text": "45 12 345678"},
+    {"label": "RU_VEHICLE_PLATE", "text": "А123ВС 777"},
+    {"label": "RU_DRIVER_LICENSE", "text": "77 АВ 123456"},
+    {"label": "GPS_COORDS", "text": "55.7558, 37.6173"},
+    {"label": "TG_CHAT_ID", "text": "-1001234567890"}
+  ]
+}
